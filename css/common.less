@@ -1,0 +1,34 @@
+.BG-IMAGE(@URL) {
+	background: url('../images/@{URL}') no-repeat center center;
+	background-size: 100% 100%;
+}
+
+.CENTER(@W, @H) {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: unit(-@H/2, rem) 0 0 unit(-@W/2, rem);
+}
+
+.CENTER-X(@W) {
+	position: absolute;
+	left: 50%;
+	margin-left: unit(-@W/2, rem);
+}
+
+.CENTER-Y(@H) {
+	position: absolute;
+	top: 50%;
+	margin-top: unit(-@H/2, rem);
+}
+
+.FONT(@W) {
+	width: unit(@W, rem);
+	height: unit(@W, rem);
+	border: 0.03rem solid #797878;
+	border-radius: 50%;
+	line-height: unit(@W, rem);
+	text-align: center;
+	color: #797878;
+	font-size: unit(@W*0.3, rem);
+}

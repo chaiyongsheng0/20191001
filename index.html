@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    
+    <!--  <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css"> -->
+
+    <!-- <link rel="stylesheet" href="css/index.css"> -->
+    <script>
+        ;
+        (function (designWidth) {
+            function computeFont() {
+                let winW = document.documentElement.clientWidth; // 当前设备视口宽度
+
+                if (winW >= 750) {
+                    // 如果设备的宽度比 750 大，而设计稿尺寸是 750；为了保证页面不会放大设计稿，我们在设备的宽度超过 750 时，让 HTML 的字体就是 100px
+                    document.documentElement.style.fontSize = '100px';
+                    return;
+                }
+
+                // 根据视口和设计稿的比例关系计算当前设备下 HTML 的字体大小
+                document.documentElement.style.fontSize = winW / designWidth * 100 + 'px'
+            }
+
+            computeFont()
+
+            window.addEventListener('resize',
+                computeFont) // 当浏览器的可视窗口尺寸发生变化时，会触发 onresize 事件，当 onresize 事件触发时，重新计算 HTML 的 fontSize
+
+            window.addEventListener('orientationchange', computeFont)
+        })(750);
+    </script>
+    <script src="js/prefixfree.min.js"></script>
+</head>
+
+<body>
+    <main class="container">
+        <!-- 滑屏区域 -->
+        <section class="swiperBox">
+            <a href="javascript:;" class="returnBox"></a>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide page1">
+                        <div id="cmp1" class="cmp1">
+                        </div>
+                        <div id="cmp2" class="cmp2">
+
+                        </div>
+                        <div id="cmp3" class="cmp3">
+
+                        </div>
+                        <div id="cmp4" class="cmp4">
+                            <img src="images/page1img2.png" alt="">
+                            <img src="images/page1img3.png" alt="">
+                            <img src="images/page1img4.png" alt="">
+                        </div>
+                        <div id="cmp5" class="cmp5">
+                            <img src="images/page1img5.png" alt="">
+                            <img src="images/page1img6.png" alt="">
+                            <img src="images/page1img7.png" alt="">
+                        </div>
+                        <div id="cmp6" class="cmp6">
+
+                        </div>
+                        <div id="cmp7" class="cmp7">
+                            HI! IS THAT YOU?
+                        </div>
+                        <div id="cmp8" class="cmp8">
+
+                        </div>
+                        <div id="cmp9" class="cmp9">
+
+                        </div>
+
+
+                    </div>
+                    <div class="swiper-slide page2">
+                        <div id="cmp11" class="cmp11">
+
+                        </div>
+                        <div id="cmp12" class="cmp12">
+
+                        </div>
+                        <div id="cmp13" class="cmp13">
+
+                        </div>
+                        <div id="cmp14" class="cmp14">
+                            <section>姓名<br>籍贯<br>毕业学校<br>专业<br>邮箱<br>手机<br>QQ<br></section>
+                        </div>
+                        <div id="cmp15" class="cmp15">
+                            <p>柴永生</p>
+                            <p>河北沧州</p>
+                            <p>沧州师范学院</p>
+                            <p>计算机科学与技术</p>
+                            <p>1761204394@qq.com</p>
+                            <p>18731713808</p>
+                            <p>1761204394</p>
+                        </div>
+                        <div id="cmp16" class="cmp16">
+
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide page3">
+                        <div id="cmp21" class="cmp21">
+                            <p>专业技能</p>
+                        </div>
+                        <div id="cmp22" class="cmp22">
+                        </div>
+                        <div id="cmp23" class="cmp23">
+                        </div>
+                        <div id="cmp24" class="cmp24">
+                        </div>
+                        <div id="cmp25" class="cmp25">
+                        </div>
+                        <div id="cmp26" class="cmp26">
+                        </div>
+                        <div id="cmp27" class="cmp27">
+                        </div>
+                    </div>
+                    <div class="swiper-slide page4">
+                        <div id="cmp31" class="cmp31">
+                        </div>
+                        <div id="cmp32" class="cmp32">
+                            <p>个<br>人<br>兴<br>趣<br>爱<br>好<br></p>
+                        </div>
+                        <div id="cmp33" class="cmp33">
+                        </div>
+                        <div id="cmp34" class="cmp34">
+                        </div>
+                        <ul id="cmp35" class="cmp35">
+                            <li>听歌</li>
+                            <li>看书</li>
+                            <li>乒乓球</li>
+                            <li>美食</li>
+                            <li>程序员</li>
+                            <li>看电影</li>
+                            <li>LOL</li>
+                            <li>看动漫</li>
+                            <li>养宠物</li>
+                            <li>看直播</li>
+                            <li>骑车</li>
+                    </div>
+                    <div class="swiper-slide page5">
+                        <div id="cmp41" class="cmp41">
+                            <p>SELF EVALUATION</p>
+                        </div>
+                        <div id="cmp42" class="cmp42">
+                        </div>
+                        <div id="cmp43" class="cmp43">
+                            <p> 自我<br>
+                                评价</p>
+                        </div>
+                        <div id="cmp44" class="cmp44">
+
+                        </div>
+                        <div id="cmp45" class="cmp45">
+
+                        </div>
+                        <div id="cmp46" class="cmp46">
+
+                        </div>
+                        <div id="cmp47" class="cmp47">
+
+                        </div>
+                        <div id="cmp48" class="cmp48">
+
+                        </div>
+                        <div id="cmp49" class="cmp49">
+                            <p>
+                                性格开朗，善于沟通<br>
+                                注重改善工作方式，提高工作效率<br>
+                                热爱学习，提高自身的专业技能<br>
+                                有良好的人际关系和很强的适应能力<br>
+                                工作认真负责、踏实肯干<br>
+                                具有较强的组织能力和团体精神<br>
+                                敢于挑战自己
+                            </p>
+                        </div>
+
+
+                    </div>
+                    <div class="swiper-slide page6">
+                        <div id="cmp51" class="cmp51">
+                            <p>工作<br>经历</p>
+                        </div>
+                        <div id="cmp52" class="cmp52">
+
+                        </div>
+                        <div id="cmp53" class="cmp53">
+
+                        </div>
+                        <div id="cmp54" class="cmp54">
+
+                        </div>
+                        <div id="cmp55" class="cmp55">
+
+                        </div>
+                        <div id="cmp56" class="cmp56">
+                            <p>WORK EXPERIENCE</p>
+                        </div>
+                        <div id="cmp57" class="cmp57">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </div>
+                        <div id="cmp58" class="cmp58">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </div>
+                        <div id="cmp59" class="cmp59">
+                            <li>1998~2019<br>程序员</li>
+                            <li>1998~2019<br>程序员</li>
+                            <li>1998~2019<br>程序员</li>
+                        </div>
+                        <div id="cmp60" class="cmp60">
+                        </div>
+                        <div id="cmp61" class="cmp61">
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide page7">
+                        <div id="cmp71" class="cmp71">
+                        </div>
+                        <div id="cmp72" class="cmp72">
+                        </div>
+                        <div id="cmp73" class="cmp73">
+                        </div>
+                        <div id="cmp74" class="cmp74">
+                        </div>
+                        <div id="cmp75" class="cmp75">
+                            <p>END</p>
+                        </div>
+                        <div id="cmp76" class="cmp76">
+                            <p>如果需要，请联系我，THANKS！</p>
+                        </div>
+                        <div id="cmp77" class="cmp77">
+                        </div>
+                        <div id="cmp78" class="cmp78">
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 音乐区域 -->
+        <section class="musicBox">
+                <!-- AUDIO支持的格式：mp3/ogg/wav/m3u8直播流 -->
+                <audio class="musicAudio" src="music/Over The Horizon.mp3" loop preload="none">
+                </audio>
+                <a href="javascript:;" class="musicIcon"></a>
+            </section>
+    </main>
+    
+
+
+    <script src="js/zepto.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/makisu.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
